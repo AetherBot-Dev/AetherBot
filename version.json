@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "released": "2026-10-20",
-  "download": "https://github.com/aetherbot-dev/aetherbot/releases/download/v2.2.0/aetherbot-setup.zip",
-  "sha256": "e895418a7c23e2e91f8159ef154a0f458ea3d8bdc362aad4eb592c876207319b",
+  "download": "https://github.com/AetherBot-Dev/AetherBot/releases/download/v2.2.0/aetherbot-setup.zip",
+  "sha256": "2ed66bf0993ccc383037da4594c5cbf75964aab451bfc46bd049d0f57393ac9d",
   "notes": "Warning ladder, First redeem, weighted giveaways, Hangman overlay, gift-bomb thank-yous."
 }
