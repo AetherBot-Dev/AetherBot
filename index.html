@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AetherBot</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="wrap">
+<h1>AetherBot</h1>
+<p class="dim">A Twitch chat bot with a control panel that runs on your own computer.</p>
+
+<div class="card">
+  <p><strong>Latest version: <span id="ver">&hellip;</span></strong> <span class="dim" id="date"></span></p>
+  <p><a class="btn" id="dl" href="https://github.com/YOUR-GITHUB-NAME/aetherbot/releases/latest">Download for Windows</a></p>
+  <p class="dim" id="sum"></p>
+</div>
+
+<h2>Installing</h2>
+<ol>
+  <li>Download the zip and extract the <b>whole</b> folder.</li>
+  <li>Double-click <code>install.bat</code>. A setup page opens in your browser and walks you through it.</li>
+  <li>To update later, run the new <code>install.bat</code> over your old install. Your settings, counters and commands are kept, and a backup is made first.</li>
+</ol>
+
+<h2>Good to know</h2>
+<ul>
+  <li>Everything runs on your computer. Nothing is sent to the developer. See the <a href="privacy.html">privacy notice</a>.</li>
+  <li>Windows may warn about a file it does not recognise. Compare the checksum above with the one on your download if you want to be sure it is untouched.</li>
+  <li>AetherBot is not affiliated with, endorsed by, or sponsored by Twitch Interactive, Inc. See the <a href="terms.html">terms</a>.</li>
+</ul>
+
+<nav><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+</div>
+<script>
+fetch('version.json',{cache:'no-store'}).then(r=>r.json()).then(function(v){
+  document.getElementById('ver').textContent=v.version;
+  if(v.released)document.getElementById('date').textContent='('+v.released+')';
+  if(v.download)document.getElementById('dl').href=v.download;
+  if(v.sha256)document.getElementById('sum').innerHTML='SHA-256 checksum: <code>'+v.sha256+'</code>';
+}).catch(function(){document.getElementById('ver').textContent='see the download page';});
+</script>
+</body></html>
