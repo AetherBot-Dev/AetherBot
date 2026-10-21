@@ -1,7 +1,7 @@
 {
-  "version": "2.2.1",
+  "version": "2.2.3",
   "released": "2026-10-20",
-  "download": "https://github.com/AetherBot-Dev/AetherBot/releases/download/v2.2.1/aetherbot-setup.zip",
-  "sha256": "bed9a442cfe06306a8fb177ef7481602fafc11e73585271033477bc4e9de0bcb",
-  "notes": "You now register your own free Twitch app. Setup and the panel explains how. Adds the Update page on the bots control panel."
+  "download": "https://github.com/AetherBot-Dev/AetherBot/releases/download/v2.2.3/aetherbot-setup.zip",
+  "sha256": "e8222dcf6f618367eb43e3221859173dc09f6ea2c2c1e190f34e0f91a6ca4591",
+  "notes": "Fixes running AetherBot on your own channel account: the bot now answers you without ever answering itself. Before it ignored itself, meaning your channels username if you chose to use your stream account to host it. (oops)"
 }
