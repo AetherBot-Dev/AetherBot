@@ -2,6 +2,6 @@
   "version": "2.2.3",
   "released": "2026-10-20",
   "download": "https://github.com/AetherBot-Dev/AetherBot/releases/download/v2.2.3/aetherbot-setup.zip",
-  "sha256": "a6758d6de491a744eb36171303c4e9247d85582430a597156e499b0987934141",
+  "sha256": "e8222dcf6f618367eb43e3221859173dc09f6ea2c2c1e190f34e0f91a6ca4591",
   "notes": "Fixes running AetherBot on your own channel account: the bot now answers you without ever answering itself. Before it ignored itself, meaning your channels username if you chose to use your stream account to host it. (oops)"
 }
